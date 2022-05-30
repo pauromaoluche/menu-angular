@@ -1,0 +1,40 @@
+#topbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(8, 8, 7, 0.7);
+    color: white;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+header {
+    height: 550px;
+    background: url(/assets/img/bread.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 7px 7px 5px #312b2b;
+        h1{
+            font-size: 48px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+    }
+}
