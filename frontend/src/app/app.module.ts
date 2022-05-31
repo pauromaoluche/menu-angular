@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FoodFormComponent } from './components/food-form/food-form.component';
-import { NewFoodComponent } from './pages/new-food/new-food.component';
+import { NewComponent } from './pages/new/new.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
@@ -16,8 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     HomeComponent,
     FoodFormComponent,
-    NewFoodComponent,
-    
+    NewComponent
   ],
   imports: [
     BrowserModule,
