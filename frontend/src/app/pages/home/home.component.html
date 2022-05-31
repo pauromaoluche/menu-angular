@@ -1,1 +1,57 @@
-<p>home works!</p>
+<section class="menu ">
+    <div class="container">
+        <div class="title-section">
+            <h2>Menu</h2>
+            <p>Confira nosso saboroso cardápio</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <ul id="menu-flters">
+                <li class="filter-active">All</li>
+                <li>Starters</li>
+                <li>Salads</li>
+                <li>Specialty</li>
+            </ul>
+        </div>
+        <div class="items">
+            <div class="row">
+                <div class="col-lg-6 item">
+                    <a data-bs-toggle="modal" data-bs-target="#modal-food-info">
+                        <div class="content">
+                            <div class="image">
+                                <img class="img-fluid rounded-circle img-thumbnail" src="https://picsum.photos/90/90"
+                                    alt="">
+                            </div>
+                            <div class="content-info">
+                                <div class="price">
+                                    <a>Pão Francês</a>
+                                    <span>R$ 3,00</span>
+                                </div>
+                                <p class="ingredients">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="modal fade " id="modal-food-info" tabindex="-1" aria-labelledby="modal-food-label"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-food-label">Pão Francês</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <figure class="figure">
+                                    <img  src="/assets/img/bread.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption">Ingredientes: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+                                </figure>
+                                <p class="price">Valor: R$ 3,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
