@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-lg-5">
+        <img class="img-fluid" src="https://picsum.photos/400/600" />
+    </div>
+    <div class="col-lg-7">
+        <form>
+            <div class="item-food mb-3">
+                <label for="food-name" class="form-label">Nome da comida</label>
+                <input type="text" placeholder="Nome da comida" class="form-control" id="food-name"
+                    aria-describedby="food-name" required>
+            </div>
+            <div class="item-food mb-3">
+                <label for="food-desc" class="form-label">Descrição</label>
+                <input type="text" placeholder="Descrição e ingredientes" class="form-control" id="food-desc" required>
+            </div>
+            <div class="item-food mb-3">
+                <label for="food-value" class="form-label">Valor</label>
+                <input type="number" placeholder="valor da comida" step="0.01" class="form-control" id="food-value"
+                    required>
+            </div>
+            <div class="item-food mb-3">
+                <label for="food-value" class="form-label">Grupo</label>
+                <select name="select" required>
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2" selected>Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                </select>
+            </div>
+            <div class="item-food mb-3">
+                <label for="food-value" class="form-label">Imagem da comida</label>
+                <input type="file">
+            </div>
+            <div class="item-food mb-3">
+                <button type="submit" class="btn btn-primary" value="">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
