@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-lg-5">
+        <img class="img-fluid" src="https://picsum.photos/400/600" />
+    </div>
+    <div class="col-lg-7">
+        <form (ngSubmit)="submit()" [formGroup]="foodForm" #formDir="ngForm">
+            <div class="item-food mb-3">
+                <label for="name" class="form-label">Nome da comida</label>
+                <input type="text" placeholder="Nome da comida" class="form-control" id="name" aria-describedby="name"
+                    formControlName="name" required>
+                <div *ngIf="name.invalid && formDir.submitted">
+                    <p *ngIf="name.errors?.['required']">Nome Obrigatorio</p>
+                </div>
+            </div>
+            <div class="item-food mb-3">
+                <label for="description" class="form-label">Descrição</label>
+                <input type="text" placeholder="Descrição e ingredientes" class="form-control" id="desc" required
+                    formControlName="description">
+                <div *ngIf="description.invalid && formDir.submitted">
+                    <p *ngIf="description.errors?.['required']">Descrição é Obrigatoria</p>
+                </div>
+            </div>
+            <div class="item-food mb-3">
+                <label for="value" class="form-label">Valor</label>
+                <input type="number" placeholder="valor da comida" step="0.01" class="form-control" id="value"
+                    formControlName="value" required>
+                <div *ngIf="value.invalid && formDir.submitted">
+                    <p *ngIf="value.errors?.['required']">Valor é Obrigatorio</p>
+                </div>
+            </div>
+            <div class="item-food mb-3">
+                <label for="group_id" class="form-label">Grupo</label>
+                <select name="select" formControlName="group_id" required>
+                    <option value="1">Valor 1</option>
+                    <option value="2" selected>Valor 2</option>
+                    <option value="3">Valor 3</option>
+                </select>
+                <div *ngIf="group_id.invalid && formDir.submitted">
+                    <p *ngIf="group_id.errors?.['required']">O grupo Obrigatorio</p>
+                </div>
+            </div>
+            <div class="item-food mb-3">
+                <label for="value" class="form-label">Imagem da comida</label>
+                <input type="file" (change)="fileChangeEvent($event)">
+            </div>
+            <div class="item-food mb-3">
+                <button type="submit" class="btn btn-primary" value="">{{ btnText }}</button>
+            </div>
+        </form>
+    </div>
+</div>

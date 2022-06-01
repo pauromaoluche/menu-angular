@@ -1,1 +1,6 @@
-<p>index works!</p>
+<div *ngIf="router.url =='/admin'; else otherRoutes">
+    teste
+</div>
+<ng-template #otherRoutes>
+    <router-outlet></router-outlet>
+</ng-template>
