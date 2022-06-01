@@ -1,8 +1,23 @@
-<section class="new-food">
-    <div class="container">
-        <div class="title-section">
-            <h2>Menu</h2>
-            <p>Confira nosso saboroso cardápio</p>
+<div *ngIf="router.url =='/adicionar'; else noMoments">
+    <section class="new">
+        <div class="container">
+            <div class="title-section">
+                <h2>Adicionar</h2>
+                <p>Oque você deseja adicionar ?</p>
+            </div>
         </div>
+        <div class="add">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"><a routerLink="nova-comida">Comida</a></div>
+                    <div class="col-lg-6"><a routerLink="novo-grupo">Grupo de alimento</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<ng-template #noMoments>
+    <div class="container route">
+        <router-outlet></router-outlet>
     </div>
-</section>
+</ng-template>
